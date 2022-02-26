@@ -33,19 +33,34 @@
         <a href="water.html"><span class="nav_sec">water</span></a>
         <a href="grocery.html"><span class="nav_sec">grocery</span></a>
         <a href="recycle.html"><span class="nav_sec">recycle</span></a>
+         <a href="compost.html"><span class="nav_sec">compost</span></a>
 </div>
 
 <div class="title">
     <p>Nearby Water Refill Stations</p>
 </div>
 
-<div class="mapbody">
-    <iframe src="https://storage.googleapis.com/maps-solutions-inoh1vcvml/locator-plus/locator-plus.html"
-  height="700px" width="1000px"
-  style="border:0;"
-  loading="lazy">
-</iframe>
+<div class="row">
+    <div class="mapbody">
+        <iframe src="https://storage.googleapis.com/maps-solutions-inoh1vcvml/locator-plus/locator-plus.html"
+            height="700px" width="1000px"
+            style="border:0; margin-right:50px;"
+            loading="lazy">
+        </iframe>
+    </div>
+    <div class="feedback" id ="mainform">
+        <h1>Know a location not listed? Submit it below!</h1>
+        <div class="col-sm-6" >
+            <form>
+            <label><h1>Location Name:</h1> </label><input type="text" name="name" size="20"  class=" form-control" placeholder="User name" required />
+            <h1>Location Address:</h1><textarea class="form-control" rows="10"  placeholder="Message" style="width: 525px;" required></textarea>
+            <br>
+            <input type="submit" class="feedbackbtn" id="btn"></button>
+            <form>
+        </div>
+    </div>
 </div>
+
 
  <div class="footer">
         <div class="top">sustain. <span>&#9851;</span> 2022</div>
