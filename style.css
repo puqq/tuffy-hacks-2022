@@ -3,31 +3,50 @@ body {
     font-family: 'Manrope', sans-serif;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
     background-color: #7c866e;
+}
+
+p {
+    margin: 0;
 }
 
 .image {
     background-image: url(img/bkg_img.png);
+
     height: 500px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
 }
 
 .logo {
-    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 30px;
+    margin-left: 85vw;
+    width: 200px;
+    height: 100px;
+}
 
+.logo img {
+    width: 175px;
+    height: auto;
 }
 
 .header {
-    padding-top: 130px;
+    padding-top: 160px;
     color: white;
     font-size: 400%;
     text-align: left;
     margin-left: 5%;
     width: 30%;
     height: 100px;
+    white-space: nowrap;
 }
 
 .nav_bar {
@@ -85,10 +104,66 @@ body {
     }
 }
 
-.mapstitle {
-    font-size: 5vh;
+.title {
     text-align: center;
+    font-size: 5vh;
     color: white;
+    padding-top: 40px;
+}
+
+.mapbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#map {
+    height: 80vh;
+    /* The height is 400 pixels */
+    width: 70vw;
+    /* The width is the width of the web page */
+}
+
+.footer {
+    display: block;
+
+    background-color: #F4F4F4;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    text-align: center;
+
+    font-size: 1.25em;
+    color: #5F3D3F
+}
+
+.footer span {
+    color: #7c866e;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    color: white;
+    padding-bottom: 10vh;
+}
+
+.circleBase {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 50%;
+    padding-bottom: 10vh;
+}
+
+.circleBase img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -97,15 +172,22 @@ body {
     width: 20%;
     padding: 50px;
 }
-.row{
-    margin-left: 18%;
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
+
 /* Clear floats after image containers */
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
+
 .container {
     position: relative;
 }
@@ -117,6 +199,7 @@ body {
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 50%;
 }
 
 .middle {
@@ -140,6 +223,6 @@ body {
 
 .text {
     color: white;
-    font-size: 45px;
+    font-size: 30px;
     padding: 16px 32px;
 }
