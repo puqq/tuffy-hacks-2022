@@ -9,10 +9,17 @@ body{
 .image {
     background-image: url(img/bkg_img.png);
     height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+.logo{
+    width: 300px;
 
+}
 .header {
-    padding-top: 150px;
+    padding-top: 130px;
     color: white;
     font-size: 400%;
     text-align: left;
