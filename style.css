@@ -120,13 +120,6 @@ p {
     padding-bottom: 30px;
 }
 
-#map {
-    height: 80vh;
-    /* The height is 400 pixels */
-    width: 70vw;
-    /* The width is the width of the web page */
-}
-
 .footer {
     display: block;
 
