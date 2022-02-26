@@ -1,4 +1,4 @@
-body{
+body {
     margin-top: -64px;
     font-family: 'Manrope', sans-serif;
     margin-left: 0;
@@ -14,10 +14,12 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-.logo{
+
+.logo {
     width: 300px;
 
 }
+
 .header {
     padding-top: 130px;
     color: white;
@@ -26,4 +28,65 @@ body{
     margin-left: 5%;
     width: 30%;
     height: 100px;
+}
+
+.nav_bar {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    background-color: #F4F4F4;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    text-align: center;
+    letter-spacing: 0.065vw;
+    font-family: 'Manrope',
+        sans-serif;
+    font-size: 1.25em;
+    color: #5F3D3F;
+
+    z-index: 0;
+}
+
+.nav_sec {
+    display: inline-block;
+    padding: 0px 2vw;
+
+    color: #5F3D3F;
+    ;
+
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.nav_sec:hover {
+    color: #bbb0b1;
+
+    -webkit-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+@media only screen and (max-width: 100vw) {
+    .nav_bar {
+        overflow-y: visible;
+
+        font-size: 1.2em;
+    }
+
+    .nav_sec {
+        padding: 5px 2vw;
+    }
+
+    .dropdown-content .nav_sec {
+        padding: 0;
+    }
+}
+
+.mapstitle {
+    font-size: 5vh;
+    text-align: center;
+    color: white;
 }
