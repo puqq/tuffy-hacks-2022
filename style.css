@@ -1,12 +1,22 @@
 body{
+    margin-top: -64px;
     font-family: 'Manrope', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #7c866e;
 }
-header{
-    background: url(img/bkg_img.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
+
+.image {
+    background-image: url(img/bkg_img.png);
+    height: 600px;
+}
+
+.header {
+    padding-top: 150px;
+    color: white;
+    font-size: 400%;
+    text-align: left;
+    margin-left: 5%;
+    width: 30%;
+    height: 100px;
 }
