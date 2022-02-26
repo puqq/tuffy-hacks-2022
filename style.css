@@ -11,6 +11,13 @@ p {
     margin: 0;
 }
 
+h1 {
+    color: white;
+    font-size: 25px;
+    width: 30vw;
+}
+
+
 .image {
     background-image: url(img/bkg_img.png);
 
@@ -106,9 +113,10 @@ p {
 
 .title {
     text-align: center;
-    font-size: 5vh;
+    font-size: 50px;
     color: white;
     padding-top: 40px;
+    white-space: nowrap;
 }
 
 .mapbody {
@@ -139,19 +147,20 @@ p {
 
 .description {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 5vh;
+    font-size: 50px;
     color: white;
-    padding-bottom: 10vh;
+    height: 450px;
 }
 
+
 .circleBase {
-    width: 20vw;
-    height: 20vh;
+    width: 400px;
+    height: auto;
     border-radius: 50%;
-    padding-bottom: 10vh;
+    margin-right: 10vh;
 }
 
 .circleBase img {
@@ -218,4 +227,37 @@ p {
     color: white;
     font-size: 30px;
     padding: 16px 32px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: white;
+    width: 400px;
+    font-size: 30px;
+}
+
+input[type=text] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 515px;
+
+}
+
+input[type=text]:focus {
+    border-color: #333;
+}
+
+input[type=submit] {
+    padding: 15px 233px;
+    background: #bbb0b1;
+    border: 0 none;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }

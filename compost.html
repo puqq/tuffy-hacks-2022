@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>Zero Waste Grocery Stores</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Elizaveta Vygovskaia, Abraham Medina, Andrew Valdez, Allison Chu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,41 +33,43 @@
         <a href="water.html"><span class="nav_sec">water</span></a>
         <a href="grocery.html"><span class="nav_sec">grocery</span></a>
         <a href="recycle.html"><span class="nav_sec">recycle</span></a>
-        <a href="compost.html"><span class="nav_sec">compost</span></a>
+         <a href="compost.html"><span class="nav_sec">compost</span></a>
 </div>
 
 <div class="title">
-    <p>About Us</p>
+    <p>Nearby Compost Centers</p>
 </div>
 
-<div class="description">
-    <div class="circleBase">
-        <img src="img/allison.jpg" alt="Allison Profile Pic">
+<div class="row">
+    <div class="mapbody">
+        <iframe src="https://storage.googleapis.com/maps-solutions-inoh1vcvml/locator-plus/locator-plus.html"
+            height="700px" width="1000px"
+            style="border:0; margin-right:50px;"
+            loading="lazy">
+        </iframe>
     </div>
-    <div class="column">
-        <p class="dText">Allison Chu</p>
-        <h1>
-            <a href="https://www.linkedin.com/in/ucrallisonchu/">Linkedin</a>
-            <a href="https://github.com/allisonchuu">Github</a>
-        </h1>
-        <h1>Hi! My name is Allison. I am a senior Majoring in Neuroscience and Minoring in Computer Science at the University of California, Riverside. 
-            Sustaiability is important to me because our society produces so much waste every year. I know that together we can 
-            reduce that waste by practicing mindful habits.</h1>
+    <div class="feedback" id ="mainform">
+        <h1>Know a location not listed? Submit it below!</h1>
+        <div class="col-sm-6" >
+            <form>
+            <label><h1>Location Name:</h1> </label><input type="text" name="name" size="20"  class=" form-control" placeholder="User name" required />
+            <h1>Location Address:</h1><textarea class="form-control" rows="10"  placeholder="Message" style="width: 525px;" required></textarea>
+            <br>
+            <input type="submit" class="feedbackbtn" id="btn"></button>
+            <form>
+        </div>
     </div>
 </div>
 
-<div class="description">
-    <div class="circleBase">
-        <img src="img/andrew.jpg" alt="Andrew Profile Pic">
-    </div>
-    <div class="column">
-        <p class="dText">Andrew Valdez</p>
-        <h1>this is me</h1>
-    </div>
-</div>
 
  <div class="footer">
         <div class="top">sustain. <span>&#9851;</span> 2022</div>
 </div>
+
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWG0205ylPRQxk9w8OyF-cQ4Ewk5C2e9c&callback=initMap&libraries=&v=weekly"
+      async
+></script>
+
 </body>
 </html>
