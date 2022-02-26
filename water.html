@@ -26,11 +26,21 @@
         <a href="water.html"><span class="nav_sec">water</span></a>
         <a href="grocery.html"><span class="nav_sec">grocery</span></a>
         <a href="recycle.html"><span class="nav_sec">recycle</span></a>
+        <a href="aboutus.html"><span class="nav_sec">about us</span></a>
 </div>
 
 <div class="mapstitle">
-    <p>Nearby Water Refill Stations</p>
+    <p>Nearby Recycling Centers</p>
+    <div id="map"></div>
 </div>
+
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWG0205ylPRQxk9w8OyF-cQ4Ewk5C2e9c
+&callback=initMap&libraries=&v=weekly"
+      async
+></script>
 
 </body>
 </html>

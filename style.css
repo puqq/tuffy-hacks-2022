@@ -86,7 +86,17 @@ body {
 }
 
 .mapstitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 5vh;
-    text-align: center;
     color: white;
+}
+
+#map {
+    height: 80vh;
+    /* The height is 400 pixels */
+    width: 70vw;
+    /* The width is the width of the web page */
 }
