@@ -116,7 +116,6 @@ h1 {
     font-size: 50px;
     color: white;
     padding-top: 40px;
-    white-space: nowrap;
 }
 
 .mapbody {
@@ -145,27 +144,109 @@ h1 {
     color: #7c866e;
 }
 
+.aboutusbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
 .description {
+    background-color: #97A386;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
     color: white;
-    height: 450px;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    width: 70%;
+    border-radius: 40px;
 }
 
 
 .circleBase {
-    width: 400px;
+    width: 30%;
     height: auto;
     border-radius: 50%;
-    margin-right: 10vh;
 }
 
 .circleBase img {
     width: 100%;
     border-radius: 50%;
+}
+
+.columns {
+    text-align: center;
+    width: 48%;
+    margin-left: 50px;
+}
+
+.columns p {
+    width: auto;
+    font-size: 300%;
+    white-space: nowrap;
+}
+
+.columns h1 {
+    width: auto;
+    font-size: 150%;
+}
+
+@media only screen and (max-width:2000px) {
+    .description {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .description {
+        background-color: #97A386;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 20px;
+        padding: 50px;
+        height: 30%;
+        width: 80%;
+        border-radius: 40px;
+    }
+
+
+    .circleBase {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 5%;
+        position: relative;
+        width: 50vw;
+    }
+
+    .columns {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin-left: 0;
+        padding-bottom: 50px;
+    }
+
+    .columns p {
+        text-align: center;
+        font-size: 200%;
+
+    }
+
+    .columns h1 {
+        width: auto;
+        font-size: 150%;
+    }
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
